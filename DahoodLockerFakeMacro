@@ -1,0 +1,39 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/turtle"))()
+
+local Lock = library:Window("Lock")
+local macro = library:Window("fake macro")
+
+Lock:Button("Lock circle", function()
+   getgenv().Silent = {
+    Settings = {
+        Enabled = true,
+        AimPart = "UpperTorso",
+        Prediction = 0.159748979134,
+        WallCheck = true,
+        Visualize = true,
+        AutoPrediction = true,
+    },
+    FOV = {
+        Enabled = true,
+        Size = 35,
+        Filled = false,
+        Thickness = 0.77,
+        Transparency = 0.9,
+        Color = Color3.fromRGB(255,0,0),
+    },
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CyberPlaysYT/Aura-x/main/Source", true))()
+end)
+
+macro:Button("fake macro", function()
+   local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
+local Notify = AkaliNotif.Notify;
+Notify({
+Description = "Subscribe to jellplays890 Scripts on YouTube";
+Title = "ENJOY!";
+Duration = 15;
+});
+getgenv().Speed = true
+getgenv().FakeMacro = true
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Allvideo/nukermode/main/Kit%20tools.txt"))()
+end)
